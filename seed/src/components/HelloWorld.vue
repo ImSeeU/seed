@@ -18,11 +18,15 @@
     </picture-input>
     <br><br>
     <a href="https://github.com/alessiomaffeis/vue-picture-input" class="btn btn-success">View project on GitHub</a>
-  </div>
+  
+    </div>
+  
+
 </template>
 
 <script>
 import PictureInput from 'vue-picture-input'
+
 export default {
   name: 'app',
   data () {
@@ -37,6 +41,7 @@ export default {
       console.log('New picture selected!')
       if (this.$refs.pictureInput.image) {
         console.log('Picture loaded.')
+        console.log(this.$refs.pictureInput.fileName);
       } else {
         console.log('FileReader API not supported: use the <form>, Luke!')
       }
@@ -69,3 +74,4 @@ a {
   color: #42b983;
 }
 </style>
+

@@ -3,16 +3,25 @@
     <img src="./assets/logo.png">
    <!-- <router-view/> -->
     <HelloWorld></HelloWorld>
+    <EmailForm></EmailForm>
   </div>
 </template>
 
 <script>
+import Vue from 'vue'
+import BootstrapVue from 'bootstrap-vue'
+
+
 import HelloWorld from './components/HelloWorld.vue'
+import EmailForm from './components/EmailForm.vue'
+
+Vue.use(BootstrapVue);
 
 
 export default {
   components:{
-    'HelloWorld': HelloWorld
+    'HelloWorld': HelloWorld,
+    'EmailForm': EmailForm
   },
   name: 'app'
 }

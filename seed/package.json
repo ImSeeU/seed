@@ -10,6 +10,8 @@
     "build": "node build/build.js"
   },
   "dependencies": {
+    "bootstrap": "^3.3.7",
+    "bootstrap-vue": "^1.0.0",
     "css-loader": "^0.28.7",
     "node-sass": "^4.5.3",
     "ocr": "^3.3.76",
